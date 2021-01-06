@@ -1,0 +1,8 @@
+name: AWS Chalice Action
+description: This Github action allows automatated deployment of your AWS Chalice application via Github Actions.
+branding:
+  icon: cloud
+  color: yellow
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
