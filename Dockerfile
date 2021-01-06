@@ -10,5 +10,6 @@ COPY requirements.txt /requirements.txt
 
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
-RUN chalice deploy
-# ENTRYPOINT ["entrypoint.sh"]
+
+RUN chmod +x /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
